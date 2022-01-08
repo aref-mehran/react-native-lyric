@@ -32,9 +32,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Button title="Play Sound" onPress={playSound} />
-      <Button title="Play Sound" onPress={playSound} />
-      <Button title="Play Sound" onPress={playSound} />
-      <Button title="Play Sound" onPress={playSound} />
       <ButtonExample />
     </View>
   );

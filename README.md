@@ -1,2 +1,2 @@
-# react-native-lyric
+# expo-codesandbox-example
 Created with CodeSandbox

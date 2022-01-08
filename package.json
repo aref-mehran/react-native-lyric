@@ -17,7 +17,9 @@
     "react-dom": "17.0.1",
     "react-native": "0.66.4",
     "react-native-paper": "*",
-    "react-native-web": "0.17.5"
+    "react-native-web": "0.17.5",
+    "redux": "*",
+    "react-redux": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

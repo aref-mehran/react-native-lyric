@@ -2,7 +2,7 @@ import * as React from "react";
 import { ScrollView, StyleSheet, Image, View } from "react-native";
 import { List, Text, Chip, Divider, useTheme } from "react-native-paper";
 import { songsList } from "../db/db";
-const SongsList = () => {
+const SongsList = (rfrfrf) => {
   const {
     colors: { background }
   } = useTheme();
@@ -15,6 +15,7 @@ const SongsList = () => {
         {songsList.map((song) => {
           return (
             <List.Item
+              key={song.id}
               left={() => (
                 <Image
                   source={require("../assets/favicon.png")}
@@ -39,7 +40,16 @@ const SongsList = () => {
                   <View
                     style={[styles.container, styles.row, { paddingTop: 8 }]}
                   >
-                    <Chip icon="download" onPress={() => {}}>
+                    <Chip
+                      icon="download"
+                      onPress={() => {
+                        alert(12);
+                        console.log(rfrfrf);
+                        rfrfrf.navigation.navigate("HostpitalDetail", {
+                          hospital: "test"
+                        });
+                      }}
+                    >
                       دانلود
                     </Chip>
                   </View>

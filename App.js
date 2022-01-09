@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, StyleSheet } from "react-native";
 
-import SongsList from "./SongsList.jsx";
+import SongsList from "./components/SongsList.jsx";
 
 export default function App() {
   return (

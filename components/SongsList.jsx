@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ScrollView, StyleSheet, Image, View } from "react-native";
 import { List, Text, Chip, Divider, useTheme } from "react-native-paper";
-import { songsList } from "./db/db";
+import { songsList } from "../db/db";
 const SongsList = () => {
   const {
     colors: { background }
@@ -17,7 +17,7 @@ const SongsList = () => {
             <List.Item
               left={() => (
                 <Image
-                  source={require("./assets/favicon.png")}
+                  source={require("../assets/favicon.png")}
                   style={styles.image}
                 />
               )}
